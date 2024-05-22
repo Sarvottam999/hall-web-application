@@ -49,7 +49,7 @@ export default function ProfilePage() {
 
 
   return (
-    <div>
+    <div className='py-[100px]'>
      <AccountNav/>
 
       {subpage === 'profile' && (

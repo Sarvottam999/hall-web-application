@@ -120,10 +120,10 @@ export default function PlacesFormPage() {
 
 
   return (
-    <div>
+    <div className='py-[100px]'>
       <AccountNav/>
 
-          <form onSubmit={savePlace}>
+          <form onSubmit={savePlace} className='px-20'>
             {/* <h2 className="text-2xl mt-4">Title </h2>
             <p className=" text-gray-500 text-sm">
               title for ypur place, should be short and catchy as in
@@ -207,7 +207,7 @@ export default function PlacesFormPage() {
               </div>
 
               <div>
-                <h3 className=" mt-2 -mb-1">Price for one night</h3>
+                <h3 className=" mt-2 -mb-1">Price per person</h3>
                 <input type="number"  value={price}
               onChange={ev => setPrice(ev.target.value)} />
               </div>

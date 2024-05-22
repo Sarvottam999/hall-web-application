@@ -18,3 +18,14 @@ button.primary{
     background-color: #F5385D;
     @apply bg-primary p-2 w-full text-white rounded-2xl
 }
+
+/* body{
+    height: 100%;
+} */
+
+footer {
+    /* clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px; */
+}

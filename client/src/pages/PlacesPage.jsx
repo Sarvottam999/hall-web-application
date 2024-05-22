@@ -21,7 +21,7 @@ export default function PlacesPage() {
   // }
 
   return (
-    <div>
+    <div className="py-[100px] ">
       <AccountNav />
       <div className="text-center">
         <Link
@@ -43,11 +43,11 @@ export default function PlacesPage() {
           Add new Place
         </Link>
       </div>
-       <div className="mt-4">
+       <div className="mt-4 mx-[10%]">
         {places.length > 0 &&
           places.map((place) => (
              // console.log(place.photos.length)    ;
-            <Link to={'/account/places/' + place._id} className="flex cursor-pointer gap-4 bg-gray-100 p-4 rounded-2xl">
+            <Link to={'/account/places/' + place._id} className="flex cursor-pointer gap-4 bg-gray-100 p-4 rounded-2xl my-4">
               <div className=" flex w-32 h-32 bg-gray-300   shrink-0">
                 {place.photos.length > 0 && (
                   <img className="object-cover" src={ "http://localhost:4000/uploads/" +place.photos[0]} alt="" />
@@ -55,7 +55,7 @@ export default function PlacesPage() {
               </div>
               <div className="grow-0 shrink">
                 <h2 className="text-xl ">{place.title}</h2>
-                <p className="text-sm mt-2">{place.description}</p>
+                <p className="text-sm mt-2 line-clamp-2  ">{place.description}</p>
               </div>
             </Link>
           ))}
