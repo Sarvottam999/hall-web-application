@@ -11,7 +11,7 @@ A full stack MERN (MongoDB, Express.js, React.js, Node.js) project for managing 
 
 ## Tech Stack
 
-- **Frontend**: React.js, Redux, Bootstrap
+- **Frontend**: React.js, tailwind
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
